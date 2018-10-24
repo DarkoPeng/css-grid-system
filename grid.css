@@ -1,4 +1,5 @@
 .grid-container {
+    margin: 0 auto;
     width: 100%;
     max-width: 1200px;
 }
@@ -21,13 +22,6 @@
     padding: 12px;
     background: #ffdcdc;
 }
-.col-1 { width: 16.66%; }
-.col-2 { width: 33.33%; }
-.col-3 { width: 50%;    }
-.col-4 { width: 66.67%; }
-.col-5 { width: 83.33%; }
-.col-6 { width: 100%;   }
-
 .outline,
 .outline * {
     outline: 1px solid #f6a1a1;
@@ -40,22 +34,99 @@
     text-align: center;
     color: white;
 }
+/* col */
+.col-0 { display: none; }
+.col-1 { width: 16.66%; }
+.col-2 { width: 33.33%; }
+.col-3 { width: 50%;    }
+.col-4 { width: 66.67%; }
+.col-5 { width: 83.33%; }
+.col-6 { width: 100%;   }
+/* offset */
+.offset-1 { margin-left: 16.66%; }
+.offset-2 { margin-left: 33.33%; }
+.offset-3 { margin-left: 50%;    }
+.offset-4 { margin-left: 66.67%; }
+.offset-5 { margin-left: 83.33%; }
+.offset-6 { margin-left: 100%;   }
+/* pull */
+.pull-1 { position: relative; right: 16.66%; }
+.pull-2 { position: relative; right: 33.33%; }
+.pull-3 { position: relative; right: 50%;    }
+.pull-4 { position: relative; right: 66.7%;  }
+.pull-5 { position: relative; right: 83.33%; }
+.pull-6 { position: relative; right: 100%;   }
+
+/* push */
+.push-1 { position: relative; left: 16.66%; }
+.push-2 { position: relative; left: 33.33%; }
+.push-3 { position: relative; left: 50%;    }
+.push-4 { position: relative; left: 66.7%;  }
+.push-5 { position: relative; left: 83.33%; }
+.push-6 { position: relative; left: 100%;   }
 
 /* responsive */
 @media all and (max-width: 800px) {
+    /* col */
     .col-1 { width: 33.33%; }
     .col-2 { width: 50%;    }
     .col-3 { width: 83.33%; }
     .col-4 { width: 100%;   }
     .col-5 { width: 100%;   }
     .col-6 { width: 100%;   }    
+
+    /* offset */
+    .offset-1 { margin-left: 33.33%; }
+    .offset-2 { margin-left: 50%;    }
+    .offset-3 { margin-left: 83.33%; }
+    .offset-4 { margin-left: 100%;   }
+    .offset-5 { margin-left: 100%;   }
+    .offset-6 { margin-left: 100%;   }
+    /* pull */
+    .pull-1 { position: relative; right: 33.33%; }
+    .pull-2 { position: relative; right: 50%;    }
+    .pull-3 { position: relative; right: 83.33%; }
+    .pull-4 { position: relative; right: 100%;   }
+    .pull-5 { position: relative; right: 100%;   }
+    .pull-6 { position: relative; right: 100%;   }
+
+    /* push */
+    .push-1 { position: relative; left: 33.33%; }
+    .push-2 { position: relative; left: 50%;    }
+    .push-3 { position: relative; left: 83.33%; }
+    .push-4 { position: relative; left: 100%;   }
+    .push-5 { position: relative; left: 100%;   }
+    .push-6 { position: relative; left: 100%;   }    
 }
 
 @media all and (max-width: 650px) {
-    .col-1{ width: 50%;     }
-    .col-2{ width: 100%;    }
-    .col-3{ width: 100%;    }
-    .col-4{ width: 100%;    }
-    .col-5{ width: 100%;    }
-    .col-6{ width: 100%;    } 
+    .col-1{ width: 50%;  }
+    .col-2{ width: 100%; }
+    .col-3{ width: 100%; }
+    .col-4{ width: 100%; }
+    .col-5{ width: 100%; }
+    .col-6{ width: 100%; } 
+
+    /* offset */
+    .offset-1 { margin-left: 50%;  }
+    .offset-2 { margin-left: 100%; }
+    .offset-3 { margin-left: 100%; }
+    .offset-4 { margin-left: 100%; }
+    .offset-5 { margin-left: 100%; }
+    .offset-6 { margin-left: 100%; }
+    /* pull */
+    .pull-1 { position: relative; right: 50%;  }
+    .pull-2 { position: relative; right: 100%; }
+    .pull-3 { position: relative; right: 100%; }
+    .pull-4 { position: relative; right: 100%; }
+    .pull-5 { position: relative; right: 100%; }
+    .pull-6 { position: relative; right: 100%; }
+
+    /* push */
+    .push-1 { position: relative; left: 50%;  }
+    .push-2 { position: relative; left: 100%; }
+    .push-3 { position: relative; left: 100%; }
+    .push-4 { position: relative; left: 100%; }
+    .push-5 { position: relative; left: 100%; }
+    .push-6 { position: relative; left: 100%; }        
 }
