@@ -1,4 +1,4 @@
-## 一个简单的6列网格系统
+### gird system
 
 ``` css
 .grid-container 
